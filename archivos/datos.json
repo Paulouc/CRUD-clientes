@@ -1,29 +1,8 @@
 {
-    "22.222.222-2": {
-        "rut": "22.222.222-2",
-        "nombre": "nagata",
-        "email": "ana@premium.com",
-        "telefono": "912345678",
-        "tipo": "Premium",
-        "fecha registro": "2026-02-10",
-        "descuento": 0.2,
-        "fecha caducidad": "2026-12-31"
-    },
-    "33.333.333-3": {
-        "rut": "33.333.333-3",
-        "nombre": "Carlos Soto",
-        "email": "carlos@empresa.cl",
-        "telefono": "955443322",
-        "tipo": "Corporativo",
-        "fecha registro": "2026-02-10",
-        "rut empresa": "77.888.999-K",
-        "razon social": "Tech Solutions SA",
-        "limite credito": 5000000
-    },
     "1231241": {
         "rut": "1231241",
-        "nombre": "asfasf",
-        "email": "112afa",
+        "nombre": "marcianeke",
+        "email": "marcia.neke@asdas.com",
         "telefono": "13551",
         "tipo": "Regular",
         "fecha registro": "2026-02-10",
@@ -52,11 +31,22 @@
     },
     "187263647": {
         "rut": "187263647",
-        "nombre": "pipo",
-        "email": "pipo@asd-com",
-        "telefono": "32424",
+        "nombre": "anakin",
+        "email": "pipo@asdas.omf",
+        "telefono": "345686543",
         "tipo": "Regular",
         "fecha registro": "2026-02-11",
         "puntos acumulados": 0
+    },
+    "16769163-3": {
+        "rut": "16769163-3",
+        "nombre": "paulo",
+        "email": "asdasf",
+        "telefono": "12412516",
+        "tipo": "Corporativo",
+        "fecha registro": "14-02-2026",
+        "rut empresa": "6734354474",
+        "razon social": "asdasddf7",
+        "limite credito": 100000.0
     }
 }

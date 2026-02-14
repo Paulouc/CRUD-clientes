@@ -1,4 +1,3 @@
-from clientes import ClienteRegular, ClientePremium, ClienteCorporativo
 import json
 
 
@@ -15,7 +14,7 @@ class SistemaGestion:
         Usa el rut_cliente como llave única.
         """
         # Extraemos el RUT usando el @property
-        rut = cliente.rut
+        rut = cliente.rut_cliente
 
         # Convertimos el objeto a diccionario usando su método to_dict()
         self.base_datos_clientes[rut] = cliente.to_dict()
@@ -30,7 +29,35 @@ class SistemaGestion:
 
     def mostrar_clientes(self):
 
-        print(json.dumps(self.base_datos_clientes, indent=4, ensure_ascii=False))
+        header = f"{'RUT':<12} | {'Nombre':<15} | {'Tipo':<12} | {'Email':<25} | {'Extra':<30} | {'Extra1':<30} | {'Extra2':<30}"
+        separator = "-" * len(header)
+
+        print("\n" + separator)
+        print(header)
+        print(separator)
+        clientes = self.base_datos_clientes
+
+        for rut, info in clientes.items():
+            # Lógica para mostrar el dato extra según el tipo
+            extra = ""
+            extra1 = ""
+            extra2 = ""
+            if info["tipo"] == "Regular":
+                extra = f"Pts: {info.get('puntos acumulados', 0)}"
+            elif info["tipo"] == "Premium":
+                extra = f"Desc: {info.get('descuento', 0)}%"
+                extra1 = f"Caduca: {info.get('fecha caducidad', 0)}%"
+
+            elif info["tipo"] == "Corporativo":
+                extra = f"Crédito: ${info.get('limite credito', 0):,.0f}"
+                extra1 = f"Empresa: {info.get('razon social', 0)}%"
+                extra2 = f"Rut empresa: {info.get('rut empresa', 0)}%"
+
+            print(
+                f"{info['rut']:<12} | {info['nombre']:<15} | {info['tipo']:<12} | {info['email']:<25} | {extra:<30}| {extra1:<30}| {extra2:<30}|"
+            )
+
+        print(separator + "\n")
 
 
 def setdatos(datos: dict):
