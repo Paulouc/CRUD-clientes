@@ -1,0 +1,62 @@
+{
+    "22.222.222-2": {
+        "rut": "22.222.222-2",
+        "nombre": "nagata",
+        "email": "ana@premium.com",
+        "telefono": "912345678",
+        "tipo": "Premium",
+        "fecha registro": "2026-02-10",
+        "descuento": 0.2,
+        "fecha caducidad": "2026-12-31"
+    },
+    "33.333.333-3": {
+        "rut": "33.333.333-3",
+        "nombre": "Carlos Soto",
+        "email": "carlos@empresa.cl",
+        "telefono": "955443322",
+        "tipo": "Corporativo",
+        "fecha registro": "2026-02-10",
+        "rut empresa": "77.888.999-K",
+        "razon social": "Tech Solutions SA",
+        "limite credito": 5000000
+    },
+    "1231241": {
+        "rut": "1231241",
+        "nombre": "asfasf",
+        "email": "112afa",
+        "telefono": "13551",
+        "tipo": "Regular",
+        "fecha registro": "2026-02-10",
+        "puntos acumulados": 0
+    },
+    "12121212": {
+        "rut": "12121212",
+        "nombre": "bartolito",
+        "email": "barto@granja.com",
+        "telefono": "433353662",
+        "tipo": "Premium",
+        "fecha registro": "2026-02-11",
+        "descuento": 2.0,
+        "fecha caducidad": "2026-07-15"
+    },
+    "654768587": {
+        "rut": "654768587",
+        "nombre": "beto",
+        "email": "lobo@lagranja.com",
+        "telefono": "69758643",
+        "tipo": "Corporativo",
+        "fecha registro": "2026-02-11",
+        "rut empresa": "786549870",
+        "razon social": "Lagranj",
+        "limite credito": 250000000.0
+    },
+    "187263647": {
+        "rut": "187263647",
+        "nombre": "pipo",
+        "email": "pipo@asd-com",
+        "telefono": "32424",
+        "tipo": "Regular",
+        "fecha registro": "2026-02-11",
+        "puntos acumulados": 0
+    }
+}
