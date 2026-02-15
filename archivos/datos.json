@@ -5,7 +5,7 @@
         "email": "marcia.neke@asdas.com",
         "telefono": "13551",
         "tipo": "Regular",
-        "fecha registro": "2026-02-10",
+        "fecha registro": "10-02-2026",
         "puntos acumulados": 0
     },
     "12121212": {
@@ -14,9 +14,9 @@
         "email": "barto@granja.com",
         "telefono": "433353662",
         "tipo": "Premium",
-        "fecha registro": "2026-02-11",
+        "fecha registro": "11-02-2026",
         "descuento": 2.0,
-        "fecha caducidad": "2026-07-15"
+        "fecha caducidad": "07-02-2026"
     },
     "654768587": {
         "rut": "654768587",
@@ -27,7 +27,7 @@
         "fecha registro": "2026-02-11",
         "rut empresa": "786549870",
         "razon social": "Lagranj",
-        "limite credito": 250000000.0
+        "limite credito": 2500000.0
     },
     "187263647": {
         "rut": "187263647",
@@ -35,7 +35,7 @@
         "email": "pipo@asdas.omf",
         "telefono": "345686543",
         "tipo": "Regular",
-        "fecha registro": "2026-02-11",
+        "fecha registro": "11-02-2026",
         "puntos acumulados": 0
     },
     "16769163-3": {
@@ -48,5 +48,46 @@
         "rut empresa": "6734354474",
         "razon social": "asdasddf7",
         "limite credito": 100000.0
+    },
+    "123456789": {
+        "rut": "123456789",
+        "nombre": "david",
+        "email": "david@goliat.pe",
+        "telefono": "43325465",
+        "tipo": "Corporativo",
+        "fecha registro": "15-02-2026",
+        "rut empresa": "121212122",
+        "razon social": "PeriferiaPE",
+        "limite credito": 1000000
+    },
+    "678954358": {
+        "rut": "678954358",
+        "nombre": "steve",
+        "email": "steve@algo.123",
+        "telefono": "23456433",
+        "tipo": "Corporativo",
+        "fecha registro": "15-02-2026",
+        "rut empresa": "876543457",
+        "razon social": "Compañia ltda",
+        "limite credito": 1000000
+    },
+    "332213453": {
+        "rut": "332213453",
+        "nombre": "Michael",
+        "email": "Michael.cera@1234.cl",
+        "telefono": "009877898",
+        "tipo": "Premium",
+        "fecha registro": "15-02-2026",
+        "descuento": 2.5,
+        "fecha caducidad": "15-08-2026"
+    },
+    "098776543": {
+        "rut": "098776543",
+        "nombre": "jonah",
+        "email": "jonah@jil.pe",
+        "telefono": "43536637",
+        "tipo": "Regular",
+        "fecha registro": "15-02-2026",
+        "puntos acumulados": 0
     }
 }

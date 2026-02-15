@@ -1,5 +1,6 @@
+from datetime import date
+from dateutil.relativedelta import relativedelta
 from datetime import datetime
-import cargarDatos as cd, cliente as cl
 
 
 class Cliente:
@@ -8,9 +9,7 @@ class Cliente:
         self._rut_cliente = rut_cliente
         self._email = email
         self._telefono = telefono
-
-        # Usar setters para aplicar validaciones desde el inicio
-        self.nombre = nombre
+        self._nombre = nombre
         self.tipo_cliente = tipo_cliente
 
     # --- GETTER Y SETTER PARA NOMBRE ---
@@ -20,10 +19,7 @@ class Cliente:
 
     @nombre.setter
     def nombre(self, nuevo_nombre):
-        if len(nuevo_nombre) > 2:
-            self._nombre = nuevo_nombre
-        else:
-            print("Error: El nombre es demasiado corto.")
+        self._nombre = nuevo_nombre
 
     # --- GETTER PARA ID (Solo lectura, no tiene setter) ---
     @property
@@ -61,85 +57,8 @@ class Cliente:
             "email": self.email,
             "telefono": self.telefono,
             "tipo": self.tipo_cliente,
-            "fecha registro": datetime.now().strftime("%d-%m-%Y"),
+            "fecha registro": date.today().strftime("%d-%m-%Y"),
         }
-
-
-"""
-    def agregarCliente():
-        
-
-    def editarCliente():
-        sistema = cd.SistemaGestion()
-        rut = input("Ingrese el rut del cliente a editar: ")
-        if rut in sistema.base_datos_clientes:
-            cliente = sistema.base_datos_clientes[rut]
-            print(f"seleccione el campo a modificar")
-            print("1. Nombre")
-            print("2. Mail")
-            print("3. Telefono")
-
-            if cliente["tipo"] == "premium":
-                print("4. Descuento")
-                print("5. Fecha de caducidad")
-            elif cliente["tipo"] == "corporativo":
-                print("4. Rut Empresa")
-                print("5. Razon Social")
-                print("6. Limite de credito")
-            else:
-                print("4. Puntos acumulados")
-            opcion = input("Ingrese una opcion: ")
-            match opcion:
-                case "1":
-                    nombre = input("Ingrese el nuevo nombre: ")
-                    cliente["nombre"] = nombre
-                case "2":
-                    mail = input("Ingrese el nuevo mail: ")
-                    cliente["email"] = mail
-                case "3":
-                    telefono = input("Ingrese el nuevo telefono: ")
-                    cliente["telefono"] = telefono
-
-                case "4":
-                    if cliente["tipo"] == "premium":
-                        descuento = float(input("Ingrese el nuevo descuento: "))
-                        cliente["descuento"] = descuento
-                    elif cliente["tipo"] == "corporativo":
-                        rut_empresa = input("Ingrese el nuevo rut empresa: ")
-                        cliente["rut_empresa"] = rut_empresa
-                    elif cliente["tipo"] == "regular":
-                        puntos_acumulados = float(
-                            input("Ingrese los nuevos puntos acumulados: ")
-                        )
-                        cliente["puntos_acumulados"] = puntos_acumulados
-                case "5":
-                    if cliente["tipo"] == "premium":
-                        caduca = input("Ingrese el nuevo descuento: ")
-                        cliente["fecha_caducidad"] = caduca
-                    elif cliente["tipo"] == "corporativo":
-                        razon_social = input("Ingrese la nueva razon social: ")
-                        cliente["rut_empresa"] = rut_empresa
-                    else:
-                        print("opcion invalida")
-                case "6":
-                    if cliente["tipo"] == "corporativo":
-                        lc = float(input("Ingrese el nuevo monto limite: "))
-                        cliente["limite_credito"] = lc
-                    else:
-                        print("opcion invalida")
-                case _:
-                    print("opcion invalida")
-
-            sistema.actualizar_cliente(cliente)
-            print(cliente)
-
-    def eliminarCliente():
-        sistema = cd.SistemaGestion()
-        rut = input("Ingrese el rut del cliente a eliminar: ")
-        if rut in sistema.base_datos_clientes:
-            del sistema.base_datos_clientes[rut]
-            sistema.actualizar_cliente(sistema.base_datos_clientes)
-"""
 
 
 class ClientePremium(Cliente):
@@ -179,7 +98,9 @@ class ClientePremium(Cliente):
     def to_dict(self):
         data = super().to_dict()
         data["descuento"] = self.descuento
-        data["fecha caducidad"] = self.fecha_caducidad
+        data["fecha caducidad"] = (date.today() + relativedelta(months=+6)).strftime(
+            "%d-%m-%Y"
+        )
         return data
 
 
