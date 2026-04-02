@@ -1,0 +1,51 @@
+# --- PYTHON ---
+# Archivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribución / Empaquetado
+dist/
+build/
+*.egg-info/
+
+# --- ENTORNOS VIRTUALES ---
+# ¡Muy importante! No subas tu entorno virtual
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+
+# --- SECRETOS Y CONFIGURACIÓN ---
+# ¡CRUCIAL PARA SEGURIDAD!
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+config_secreto.json
+
+# --- IDEs y Editores ---
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# --- SISTEMA OPERATIVO ---
+# Windows
+Thumbs.db
+desktop.ini
+
+
+# --- DATOS GENERADOS POR SCRIPTS ---
+# Ignora los datos grandes que genere tu script (logs, csvs de salida, db)
+# Pero deja los de ejemplo si los necesitas para probar
+*.log
+output/
+datos_procesados/
+*.sqlite
+*.db

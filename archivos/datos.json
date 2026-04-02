@@ -1,17 +1,8 @@
 {
-    "1231241": {
-        "rut": "1231241",
-        "nombre": "marcianeke",
-        "email": "marcia.neke@asdas.com",
-        "telefono": "13551",
-        "tipo": "Regular",
-        "fecha registro": "10-02-2026",
-        "puntos acumulados": 0
-    },
     "12121212": {
         "rut": "12121212",
-        "nombre": "bartolito",
-        "email": "barto@granja.com",
+        "nombre": "Carlos",
+        "email": "carlos@mail.com",
         "telefono": "433353662",
         "tipo": "Premium",
         "fecha registro": "11-02-2026",
@@ -51,8 +42,8 @@
     },
     "123456789": {
         "rut": "123456789",
-        "nombre": "david",
-        "email": "david@goliat.pe",
+        "nombre": "Ronaldo",
+        "email": "mail@mail.com",
         "telefono": "43325465",
         "tipo": "Corporativo",
         "fecha registro": "15-02-2026",
@@ -89,5 +80,16 @@
         "tipo": "Regular",
         "fecha registro": "15-02-2026",
         "puntos acumulados": 0
+    },
+    "167691533": {
+        "rut": "167691533",
+        "nombre": "Paulo Sanchez",
+        "email": "paulo@email.com",
+        "telefono": "098765432",
+        "tipo": "Corporativo",
+        "fecha registro": "02-04-2026",
+        "rut empresa": "267459870",
+        "razon social": "Generacion Scripts SA",
+        "limite credito": 1000000
     }
 }

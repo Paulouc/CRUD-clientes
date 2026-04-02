@@ -10,7 +10,7 @@ def menu():
         print("*************************************")
         print("1. Agregar Nuevo Cliente")
         print("2. Editar Cliente")
-        print("3. Eliminat Cliente")
+        print("3. Elimina Cliente")
         print("4. Listar Clientes")
         print("5. Salir")
         opcion = input("Ingrese una opcion: ")
