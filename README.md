@@ -20,7 +20,7 @@ Es un ejemplo práctico de cómo gestionar datos de manera sencilla, utilizando 
 ![Edicion cliente](archivos/edita.jpg)
 
 ### Eliminacion de cliente
-![Eliminacion cliente](archivos/Elimina.jpg)
+![Eliminacion cliente](archivos/elimina.jpg)
 
 *(Las imágenes muestran cómo se ejecuta el programa en consola.)*
 
